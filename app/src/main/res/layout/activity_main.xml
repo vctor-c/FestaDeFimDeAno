@@ -5,14 +5,22 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:padding="8dp"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <TextView
         android:id="@+id/text_data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="DATA" />
+        android:text="DATA"
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/text_data"
+        android:layout_margin="8dp"
+        android:background="@color/design_default_color_secondary" />
 
     <TextView
         android:id="@+id/text_label_dias_restantes"
@@ -21,21 +29,32 @@
         android:layout_below="@+id/text_data"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="160dp"
-        android:text="@string/dias_restantes_para_o_fim_de_ano" />
+        android:text="@string/dias_restantes_para_o_fim_de_ano"
+        android:textSize="20sp"
+        />
+
     <TextView
+        android:id="@+id/text_dias_restantes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/text_dias_restantes"
-        android:text="365 Dias"
         android:layout_below="@id/text_label_dias_restantes"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
+        android:text="365 Dias"
+        android:textSize="30sp"
+        android:textColor="@color/design_default_color_secondary"
         />
+
     <Button
         android:id="@+id/button_confirmacao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="SIM/NÃO/CONFIRMADO" />
+        android:text="SIM/NÃO/CONFIRMADO"
+        android:padding="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:textSize="18sp"
+        />
 
 </RelativeLayout>
